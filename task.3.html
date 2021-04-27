@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<style>
+    .container {
+  display: grid;
+  grid-template-columns:
+  minmax( 250px, 300px)
+minmax(115px, 1fr)
+minmax(250px, 300px)
+minmax(115px, 1fr);
+
+  grid-gap: 10px;
+padding-top: 0 ;
+height: 80vh;
+width: 80vw;
+
+
+}
+.grey{
+    background-color: rgb(63, 61, 65);
+    border-radius: 3px;
+    
+}
+.light{
+    background-color: beige;
+    border-radius: 3px;
+    
+    
+}
+.item1{
+    grid-column: 2 / 1;
+    grid-row: 1 / 2;
+    
+}
+
+.item2 {
+    grid-column: 4/ 5;
+    
+    
+  
+}
+
+.item3 {
+    
+    grid-area: 2 / 1/ span 2 / span 1 ;
+}
+
+ .Box{
+     display: grid;
+    grid-area: 2 / 2  / 4 / 5 ;
+  padding: 15px;
+  grid-gap: 10px;
+grid-template-areas: 
+   'E  F F'
+    'E F F'
+    'E  . G';
+}
+.E {
+    grid-row: E;
+}
+  .F {
+      grid-column: F;
+  }
+
+.G{
+    grid-area: G;
+}
+
+
+    </style>
+</style>
+<body>
+    <div class="container">
+<div class="item1 grey">A</div>
+<div class="item2 grey">B</div>
+<div class="item3 grey">C</div>
+<div class="Box grey">
+<div class="E  light">E</div>
+<div class="F light">F</div>
+<div class="G light">G</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
